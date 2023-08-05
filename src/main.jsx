@@ -4,17 +4,15 @@ import App from "./App.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Authentication from "./Pages/Authentication/Authentication.jsx";
 import Database from "./Pages/Database/Database.jsx";
-import Function from "./Pages/Function/Function.jsx"
+import Function from "./Pages/Function/Function.jsx";
 import Hosting from "./Pages/Hosting/Hosting.jsx";
 import MachineLearning from "./Pages/MachineLearning/MachineLearning.jsx";
 import Storage from "./Pages/Storage/Storage.jsx";
 import { ThemeProvider } from "@mui/material";
-import { dashboardTheme } from "./style/dashboardTheme.js";
-
+import { theme } from "./style/dashboardTheme.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-
-  <ThemeProvider theme={dashboardTheme}>
+  <ThemeProvider theme={theme}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
