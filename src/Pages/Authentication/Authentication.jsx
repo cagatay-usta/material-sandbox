@@ -1,14 +1,11 @@
-import React from "react";
-import CommonButton from "../../components/common/CommonButton";
+import React, { useState } from "react";
 import { Grid } from "@mui/material";
-import NotificationBell from "../../components/common/Notifications/NotificationBell";
-
+import Header from "../../components/Header/Header";
 function Authentication() {
   return (
     <>
-      <Grid item>
-        <h1>Authentication</h1>
-        <NotificationBell iconColor="primary" badgeContent={5} />
+      <Grid item xs={8}>
+        <Header title="Authentication" />
       </Grid>
     </>
   );
