@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import CommonButton from "../../components/common/CommonButton";
-import { Avatar, Grid, Tooltip } from "@mui/material";
+import { Avatar, Grid, Tooltip, Skeleton } from "@mui/material";
 import NotificationBell from "../../components/common/Notifications/NotificationBell";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -53,7 +53,9 @@ const Header = ({ title }) => {
       <Box sx={headerStyles.topRow}>
         <Typography sx={headerStyles.link}>Go to docs</Typography>
         <NotificationBell iconColor="white" />
-        <Avatar src="https://mui.com/static/images/avatar/1.jpg" />
+        <Skeleton variant="circular" sx={{ bgcolor: "grey.100" }}>
+          <Avatar />
+        </Skeleton>
       </Box>
       <Box sx={headerStyles.middleRow}>
         <Typography variant="h1" color="white">

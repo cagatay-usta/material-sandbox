@@ -3,8 +3,7 @@ import DnsIcon from "@mui/icons-material/Dns";
 import StorageIcon from "@mui/icons-material/Storage";
 import PublicIcon from "@mui/icons-material/Public";
 import FunctionsIcon from "@mui/icons-material/Functions";
-import SettingsInputCompositeIcon from '@mui/icons-material/SettingsInputComposite';
-
+import SettingsInputCompositeIcon from "@mui/icons-material/SettingsInputComposite";
 
 export const navbarItems = [
   {
@@ -41,6 +40,6 @@ export const navbarItems = [
     id: 5,
     icon: <SettingsInputCompositeIcon />,
     label: "Machine Learning",
-    route: "machinelearning",
+    route: "machine-learning",
   },
 ];

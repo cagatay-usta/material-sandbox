@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="database" element={<Database />} />
           <Route path="function" element={<Function />} />
           <Route path="hosting" element={<Hosting />} />
-          <Route path="machinelearning" element={<MachineLearning />} />
+          <Route path="machine-learning" element={<MachineLearning />} />
           <Route path="storage" element={<Storage />} />
         </Route>
       </Routes>
